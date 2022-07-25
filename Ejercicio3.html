@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+    <Script>
+
+        let nota1, nota2, nota3;
+        let dato1, dato2, dato3, media;
+        dato1 = window.prompt("Nota del Primer Parcial", "0");
+        nota1 = parseInt(dato1);
+        dato2 = window.prompt("Nota del Segundo Parcial", "0");
+        nota2 = parseInt(dato2);
+        dato3 = window.prompt("Nota del Terer Parcial", "0");
+        nota3 = parseInt(dato3);
+
+        media = (nota1 + nota2 + nota3)/3;
+
+        if (media <= 60)
+        {
+            resultado = "Aplazado";
+        }
+        else
+        {
+            resultado = "Aprobado";
+        }
+        document.write(`<h3> Su promedio final es ${resultado} </h3>`);
+
+    </Script>
+</body>
+</html>
