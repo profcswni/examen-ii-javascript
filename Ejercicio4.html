@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
+    <!-- CDN for tailwind latest version -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
 </head>
-<body>
-    
-    <Script>
-        //Algoritmo coorespondiente a un programa que escribe el porcentaje descontado en una compra
-        //introduciendo por teclado el precio de la tarifa y el precio pagado
 
-        var  tarifa  =  parseInt ( prompt ( "Ingrese el precio de la tarifa" ) ) ;
+<body class="bg-gray-200">
+    <h1 class="text-center text-lg uppercase p-4 bg-green-600 text-white font-bold">
+        Ejercicios del II Parcial - JavaScript
+    </h1>
 
-        var  pagado  =  parseInt ( prompt ( "Ingrese el precio pagado" ) ) ;
+    <p class="text-center p-10 bg-yellow-400 text-black font-bold ">Detalles de los ejerccios del examen.</p>
 
-        var  descuento  =  (tarifa - pagado  )  /  tarifa *  100 ;
+    <!-- Create list of 10 exercices with a link to open html file using html native, not use php -->
+    <ul class="list-none p-4 grid grid-cols-5 gap-4">
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio1.html">Ejercicio 1</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio2.html">Ejercicio 2</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio3.html">Ejercicio 3</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio4.html">Ejercicio 4</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio5.html">Ejercicio 5</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio6.html">Ejercicio 6</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio7.html">Ejercicio 7</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio8.html">Ejercicio 8</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio9.html">Ejercicio 9</a>
+        </li>
+        <li class="font-bolder text-center bg-blue-600 p-4 text-white text-lg uppercase">
+            <a href="ejercicio10.html">Ejercicio 10</a>
+        </li>
+    </ul>
 
-        document.write( "El porcentaje descontado es: "  +  descuento  +  "%" ) ;
+        <script>
+            //Algoritmo coorespondiente a un programa que escribe el porcentaje descontado en una compra
+            //introduciendo por teclado el precio de la tarifa y el precio pagado
 
-        
-    </Script>
+            var tarifa = parseInt(prompt("Ingrese el precio de la tarifa"));
+
+            var pagado = parseInt(prompt("Ingrese el precio pagado"));
+
+            var descuento = (tarifa - pagado) / tarifa * 100;
+
+            document.write("El porcentaje descontado es: " + descuento + "%");
+
+
+        </script>
 </body>
+
 </html>
